@@ -1,0 +1,109 @@
+.hero {
+    position: relative;
+    margin-bottom: 8rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
+
+    @media only screen and (min-width: 800px) {
+        margin-bottom: 0;
+        padding: 7rem 6rem;
+        padding-bottom: 6rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        top: 10rem;
+        left: 20vw;
+        width: 100rem;
+        height: 53vw;
+        background-color: var(--color-soft-blue);
+        border-radius: 100rem;
+
+        @media only screen and (min-width: 800px) {
+            top: 24.5rem;
+            left: 64.5vw;
+            width: 200rem;
+            height: 44rem;
+        }
+    }
+
+    &__content-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1104px;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 800px) {
+            flex-direction: row;
+        }
+    }
+
+    &__img-wrapper {
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: 800px) {
+            order: 1;
+            flex: 1 1 auto;
+            // flex: 1 1 67rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        @media only screen and (min-width: 800px) {
+            width: auto;
+        }
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        align-items: center;
+        text-align: center;
+
+        @media only screen and (min-width: 800px) {
+            flex: 1 0 60rem;
+            text-align: start;
+            align-items: start;
+            justify-content: center;
+            margin-top: -3.5rem;
+            margin-right: 10rem;
+            padding: 0;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 3rem;
+    }
+
+    &__description {
+        margin-bottom: 4rem;
+        max-width: 67.5rem;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        @media only screen and (min-width: 375px) {
+            flex-direction: row;
+        }
+        
+        *:first-child {
+            margin-bottom: 2rem;
+
+            @media only screen and (min-width: 375px) {
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

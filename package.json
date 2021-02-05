@@ -1,0 +1,15 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass SCSS/main.scss CSS/style.css -w"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {}
+}
